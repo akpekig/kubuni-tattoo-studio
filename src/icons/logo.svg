@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" id="logo">
+  <title>Kubuni Tattoo Studio</title>
+ <style>
+    @import url(https://fonts.bunny.net/css?family=comforter-brush:400);
+    text {
+        font-family: 'Comforter Brush', cursive;
+        font-size: 144px;
+        text-transform: uppercase;
+    }
+  </style>
+  <circle cx="256" cy="256" fill="#ffa700" id="svg_1" r="196.62" stroke="#000000" stroke-width="0"/>
+  <text fill="#2b2b2b" font-family="'Comforter Brush'" font-size="160" id="svg_2" stroke="#000000" stroke-width="0" text-anchor="middle" transform="matrix(1 0 0 1.08703 0 -25.746)" x="252" xml:space="preserve" y="303.74">kubuni</text>
+</svg>
