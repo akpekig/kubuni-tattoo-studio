@@ -1,4 +1,5 @@
 import "./globals.css";
+import Header from "./components/header";
 import { Lato, Comforter_Brush } from "next/font/google";
 
 const comforter = Comforter_Brush({
@@ -25,7 +26,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${comforter.variable} ${lato.variable}`}>
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
