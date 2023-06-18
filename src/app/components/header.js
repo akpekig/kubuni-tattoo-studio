@@ -58,8 +58,13 @@ export default function Header() {
       link: "/contact",
     },
   ];
+  useEffect(() => {
+    document
+      .querySelector("body")
+      .classList.toggle("overflow-hidden", mobileDisplay && windowWidth < 1024);
+  }, [mobileDisplay, windowWidth]);
   return (
-    <header className="flex h-[5%] w-full flex-wrap items-center justify-between gap-4 bg-secondary px-4 lg:flex-nowrap lg:px-32">
+    <header className="flex h-[5%] w-full flex-wrap items-center justify-between gap-4 overflow-hidden bg-secondary px-4 lg:flex-nowrap lg:px-32">
       <LogoInverted
         className={`h-auto w-24 ${
           pathname === "/" && windowWidth >= 1024 && "invisible"
@@ -86,7 +91,7 @@ export default function Header() {
         )}
       </button>
       <nav
-        className={`absolute bottom-0 top-24 w-screen bg-secondary lg:relative lg:inset-0 lg:h-auto lg:w-auto lg:bg-transparent ${
+        className={`fixed bottom-0 top-24 w-screen bg-secondary lg:relative lg:inset-0 lg:h-auto lg:w-auto lg:bg-transparent ${
           mobileDisplay ? "left-0 motion-safe:animate-slide-right" : "left-full"
         }`}
         aria-label="Primary"
@@ -102,7 +107,7 @@ export default function Header() {
                   className={`font-normal uppercase ${
                     isActive
                       ? "text-primary"
-                      : "text-tertiary hover:text-primary focus-visible:text-primary"
+                      : "text-tertiary hover:text-primary focus-visible:text-primary motion-safe:transition-colors"
                   }`}
                   tabIndex={windowWidth < 1024 && !mobileDisplay ? -1 : 0}
                 >
