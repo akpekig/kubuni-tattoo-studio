@@ -29,3 +29,7 @@ h1 {
 h2 {
   font-size: 80pt;
 }
+
+h2.uppercase {
+  word-spacing: 1rem;
+}
