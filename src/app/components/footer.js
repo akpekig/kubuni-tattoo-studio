@@ -11,11 +11,11 @@ export default function Footer() {
         </u>
       </p>
       <p>Design: Mahya Golabi</p>
-      <p>Icons: Kyle Tezak, James Cottell</p>
+      <p>Icons: Kyle Tezak, James Cottell, lucaas</p>
       <p>
-        Photography: Seyi Ariyo, Etty Fidele, Jeffrey Erhunse, Fortune Vieyra,
-        Jordyn Hilton, Lianna de Fleur, Mira Mariah, Amanda Wachob, Muk Jung,
-        Jess Chen, Letticia Massari, Ralph Rabago, Wallace Chuck
+        Photography: Seyi Ariyo, Etty Fidele, Jeffrey Erhunse, Jordyn Hilton,
+        Lianna de Fleur, Mira Mariah, Amanda Wachob, Muk Jung, Jess Chen,
+        Letticia Massari, Wallace Chuck
       </p>
     </footer>
   );

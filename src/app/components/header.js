@@ -91,7 +91,7 @@ export default function Header() {
         )}
       </button>
       <nav
-        className={`fixed bottom-0 top-24 w-screen bg-secondary lg:relative lg:inset-0 lg:h-auto lg:w-auto lg:bg-transparent ${
+        className={`fixed bottom-0 top-24 z-10 w-screen bg-secondary lg:relative lg:inset-0 lg:h-auto lg:w-auto lg:bg-transparent ${
           mobileDisplay ? "left-0 motion-safe:animate-slide-right" : "left-full"
         }`}
         aria-label="Primary"
@@ -99,7 +99,7 @@ export default function Header() {
       >
         <ul className="flex flex-col gap-12 px-8 py-8 lg:flex-row lg:p-0">
           {links.map((item, index) => {
-            const isActive = pathname.startsWith(item.link);
+            const isActive = pathname === item.link;
             return (
               <li key={`link${index}`}>
                 <Link
