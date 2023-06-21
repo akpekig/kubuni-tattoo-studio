@@ -50,10 +50,6 @@ export default function Header() {
       link: "/artists",
     },
     {
-      name: "Services",
-      link: "/services",
-    },
-    {
       name: "Contact",
       link: "/contact",
     },
