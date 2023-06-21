@@ -1,6 +1,7 @@
 import Content from "../components/content";
 import Candle from "../../icons/candle.svg";
 import Wave from "../../icons/wave.svg";
+import Transition from "../components/transition";
 export default function About() {
   const heroParagraphs = [
     `In the vibrant city of Mombasa, a harmonious fusion of creativity and tradition birthed Kubuni Tattoo Studio.
@@ -29,38 +30,40 @@ export default function About() {
     a good laugh while you share your ideas and inspirations.`,
   ];
   return (
-    <main>
-      <Content
-        src="/about-hero.png"
-        alt="Dark-skinned thighs with tattoo of several flowers"
-        paragraphs={heroParagraphs}
-        heading="Origin Story"
-        dark={true}
-      >
-        Origin{" "}
-        <Candle
-          className="inline w-8 fill-current text-primary"
-          aria-hidden="true"
-        />{" "}
-        Story
-      </Content>
+    <Transition>
+      <main>
+        <Content
+          src="/about-hero.png"
+          alt="Dark-skinned thighs with tattoo of several flowers"
+          paragraphs={heroParagraphs}
+          heading="Origin Story"
+          dark={true}
+        >
+          Origin{" "}
+          <Candle
+            className="inline w-8 fill-current text-primary"
+            aria-hidden="true"
+          />{" "}
+          Story
+        </Content>
 
-      <Content
-        src="/about-center.jpg"
-        alt="Brown person's tattooed back highlighted in a circle"
-        paragraphs={endParagraphs}
-        imageAfter={true}
-        end={true}
-        heading="The Tattooed Way"
-        blendCirclePosition="top-64"
-      >
-        The Tattooed{" "}
-        <Wave
-          className="inline w-20 fill-current text-primary"
-          aria-hidden="true"
-        />{" "}
-        Way
-      </Content>
-    </main>
+        <Content
+          src="/about-center.jpg"
+          alt="Brown person's tattooed back highlighted in a circle"
+          paragraphs={endParagraphs}
+          imageAfter={true}
+          end={true}
+          heading="The Tattooed Way"
+          blendCirclePosition="top-64"
+        >
+          The Tattooed{" "}
+          <Wave
+            className="inline w-20 fill-current text-primary"
+            aria-hidden="true"
+          />{" "}
+          Way
+        </Content>
+      </main>
+    </Transition>
   );
 }
