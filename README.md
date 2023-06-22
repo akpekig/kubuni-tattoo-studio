@@ -11,13 +11,13 @@ This is an implementation of a [web application designed by Mahya Golabi](https:
 
 ## Overview
 
-<!-- ### Screenshot
+### Screenshot
 
-![](./screenshot.png)
+![Screenshot of web application](./screenshot.png)
 
 ### Links
 
-- Live Site URL: []() -->
+- Live Site URL: [https://kubuni-tattoo-studio.vercel.app/](https://kubuni-tattoo-studio.vercel.app/)
 
 ## My process
 
