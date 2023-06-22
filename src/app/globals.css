@@ -33,3 +33,11 @@ h2 {
 h2.uppercase {
   word-spacing: 1rem;
 }
+
+input,
+textarea {
+  padding: 0.5rem;
+  background: none;
+  border-radius: 4px;
+  border: 1px solid currentColor;
+}
