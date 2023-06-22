@@ -16,7 +16,7 @@ function Artist({ name, src, description }) {
           pathname: "/contact",
           query: `artist=${name}`,
         }}
-        className=" mx-auto rounded-3xl border border-primary bg-primary px-8 py-2 font-medium uppercase text-tertiary hover:bg-transparent hover:text-primary focus-visible:bg-transparent focus-visible:text-primary motion-safe:transition-colors"
+        className="pill pill-light"
       >
         Book
       </Link>
@@ -43,7 +43,7 @@ export default function Artists() {
   ];
   return (
     <Transition>
-      <main className="flex min-h-[95%] flex-col flex-wrap justify-between gap-8 bg-secondary p-12 text-tertiary lg:flex-row lg:px-44 lg:py-24">
+      <main className="content-wrapper flex-col justify-between gap-8 bg-secondary p-12 text-tertiary lg:flex-row lg:px-44 lg:py-24">
         {bios.map((item, index) => (
           <Artist
             key={`artist${index}`}

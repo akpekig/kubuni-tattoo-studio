@@ -47,10 +47,7 @@ export default function Contact({ searchParams }) {
           />
           <label className="sr-only">Message</label>
           <TextArea />
-          <button
-            type="submit"
-            className="mx-auto rounded-3xl border border-primary bg-primary px-8 py-2 font-medium uppercase text-tertiary hover:bg-transparent hover:text-primary focus-visible:bg-transparent focus-visible:text-primary motion-safe:transition-colors lg:ml-[85%]"
-          >
+          <button type="submit" className="pill pill-light mx-auto lg:ml-[85%]">
             Send
           </button>
         </form>

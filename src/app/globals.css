@@ -41,3 +41,18 @@ textarea {
   border-radius: 4px;
   border: 1px solid currentColor;
 }
+
+@layer utilities {
+  .pill {
+    @apply rounded-3xl border px-8 py-2 font-medium uppercase text-tertiary hover:bg-transparent focus-visible:bg-transparent focus-visible:text-primary motion-safe:transition-colors;
+  }
+  .pill-light {
+    @apply border-primary bg-primary hover:text-primary focus-visible:text-primary;
+  }
+  .pill-dark {
+    @apply border-secondary bg-secondary text-tertiary hover:text-secondary focus-visible:text-secondary;
+  }
+  .content-wrapper {
+    @apply flex min-h-[95%] flex-wrap;
+  }
+}

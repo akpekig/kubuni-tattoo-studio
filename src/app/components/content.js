@@ -70,7 +70,7 @@ export default function Content({
   }, [scroll]);
   return (
     <section
-      className={`flex min-h-[95%] flex-wrap justify-between px-0 ${
+      className={`content-wrapper justify-between px-0 ${
         dark ? "bg-secondary text-tertiary" : "text-secondary"
       }`}
       ref={sectionRef}
